@@ -1,0 +1,30 @@
+#board {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    width: 25rem;
+    height: 25rem;
+
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    background-color: gray;
+}
+
+.cell {
+    display: block;
+    background-color: lightgray;
+}
+
+.number {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    text-align: center;
+    grid-template-columns: 1fr;
+    height: 100%;
+    background-color: lightcyan;
+
+    transition: left 0.1s ease-out, top 0.1s ease-out;
+}
